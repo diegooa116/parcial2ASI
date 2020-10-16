@@ -1,0 +1,25 @@
+<div class="btn-group">
+<button class="btn btn-primary"(click)="guardarInfoCliente()">Guardar Cliente</button>
+<button class="btn btn-primary"(click)="guardarProductos()">Guardar Producto</button>
+
+<button class="btn btn-danger"(click)="eliminarTipo()">Eliminar Tipo</button>
+<button class="btn btn-danger"(click)="eliminarProducto()">Eliminar Producto</button>
+<button class="btn btn-danger"(click)="eliminarTodo()">Eliminar Todos</button>
+</div>
+
+
+
+<div class="container">
+    <div class="tipoContenedor" *ngFor="let anteojo of requerimientosClientes">
+        <p>Tipo de Lente:{{anteojo.tipoLente}}</p>
+        <p>Tipo de Material:{{anteojo.tipoMaterial}}</p>
+        <p>Tipo de Recubrimiento:{{anteojo.tipoRecubrimiento}}</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="productoContenedor" *ngFor="let producto of productosLocales">
+        <p>Producto:{{producto.nombreAnteojo}}</p>
+        <p>Precio:{{producto.precioAnteojo | currency: 'COP:'}}</p>
+    </div>
+</div>

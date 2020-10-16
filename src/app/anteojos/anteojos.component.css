@@ -1,0 +1,9 @@
+.tipoContenedor{
+    border: 1px solid red;
+    margin-top: 15px;
+}
+
+.productoContenedor{
+    border: 1px solid blueviolet;
+    margin-top: 15px;
+}
